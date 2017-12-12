@@ -72,6 +72,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="insert.aspx" />
+    <Content Include="picUpload.aspx" />
     <Content Include="report.aspx" />
     <Content Include="test.aspx" />
     <Content Include="Web.config" />
@@ -84,6 +85,13 @@
     </Compile>
     <Compile Include="insert.aspx.designer.cs">
       <DependentUpon>insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="picUpload.aspx.cs">
+      <DependentUpon>picUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="picUpload.aspx.designer.cs">
+      <DependentUpon>picUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="productSell.cs">
       <AutoGen>True</AutoGen>
@@ -119,6 +127,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="pic\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="productSell.rpt">
