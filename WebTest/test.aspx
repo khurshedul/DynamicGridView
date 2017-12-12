@@ -14,7 +14,6 @@
         $(document).ready(function () {
             $("#<%=TextBoxProductName.ClientID %>").autocomplete({
                 source: function (request, response) {
-                    debugger;
                     $.ajax({
                         type: "POST",
                         url: "test.aspx/GetProducts",
@@ -22,7 +21,6 @@
                         contentType: "application/json; charset=utf-8",
                         dataType: "json",
                         success: function (data) {
-                            debugger;
                             response($.map(data.d, function (item) {
                                 return {
                                     label: item.split('-')[0],
